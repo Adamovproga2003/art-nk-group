@@ -1,0 +1,4 @@
+.inputComponent{
+    display: flex;
+    flex-direction: column;
+}

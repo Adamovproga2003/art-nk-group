@@ -1,0 +1,12 @@
+.navBar ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.navBar ul li{
+    padding: 0 20px;
+}
+
+.navBar ul li a{
+    text-decoration: none;
+}

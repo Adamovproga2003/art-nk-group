@@ -1,0 +1,13 @@
+.sortComponent{
+    width: 35%;
+}
+
+.productCategoryButton{
+    width: 100%;
+    text-align: left;
+    display: block !important;
+}
+
+.productCategoryDiv{
+    margin: 10px 0;
+}

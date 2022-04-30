@@ -1,0 +1,118 @@
+.modalForm {
+  margin: 0 10px;
+}
+
+.wrapperProduct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row !important;
+}
+
+.wrapperProduct img {
+  height: 100px;
+}
+
+.wrapperProduct > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.productImage {
+  width: fit-content !important;
+}
+
+.deliveryContainer button {
+  display: flex;
+  width: 100%;
+  text-align: left;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.deliveryContainer button > div {
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+
+.deliveryContainer button div svg {
+  font-size: 28px;
+}
+
+.cityRegionContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.locationForm {
+  position: absolute;
+  left: 150px;
+  top: 100px;
+  background-color: red;
+  display: none;
+  z-index: 10;
+  margin: 50px;
+  width: calc(100vw - 400px);
+  height: calc(100vh - 300px);
+}
+
+.show {
+  display: block !important;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapperContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapperContainer > div {
+  width: 100%;
+}
+
+.wrapperContainer div:first-child {
+  margin-right: 10px;
+}
+
+
+.flexwrap {
+  display: flex;
+  align-items: center;
+}
+
+.flexwrap svg {
+  font-size: 16px !important;
+  margin: 0 10px;
+}
+
+.validSuccess {
+  color: #50c878;
+}
+
+.validError {
+  color: #eb4c42;
+}
+
+.stepForms{
+  overflow: hidden;
+}
+
+.absolutePos{
+  position: absolute;
+}
+.stepper{
+  margin: 10px 0;
+}
+.contentStep{
+  height: 100%;
+}
+.height100{
+  height: 100%;
+}

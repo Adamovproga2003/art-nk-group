@@ -1,0 +1,10 @@
+.submitDiv{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.submitDiv button{
+    margin: 0;
+    padding: 10px 30px;
+}

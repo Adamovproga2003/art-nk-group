@@ -1,0 +1,28 @@
+.wrapperContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapperContainer img{
+    border-radius: 10px;
+}
+
+.flexWrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.submitDiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+.submitDiv button{
+    margin: 0;
+    padding: 10px 30px;
+}
+/* .productContainer{
+    color: #F5F5F5;
+} */

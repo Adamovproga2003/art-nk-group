@@ -1,0 +1,11 @@
+.main{
+    display: flex;
+}
+
+/* .main div:first-child{
+    flex: auto 1;
+}
+
+.main div:last-child{
+    flex: auto 2;
+} */

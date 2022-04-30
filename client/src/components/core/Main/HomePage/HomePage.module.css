@@ -1,0 +1,9 @@
+.homePage{
+    display: flex;
+    width: 100%;
+    margin: 10px;
+}
+
+.homePage > div{
+    margin: 0 10px;
+}

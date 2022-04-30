@@ -1,0 +1,43 @@
+.signUpForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signUpForm > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.signUpForm div > div{
+    width: 100%
+}
+
+.formElement > div{
+    display: flex;
+    align-items: center;
+}
+
+.validateDiv{
+    margin: 0 10px;
+}
+
+.validateDiv > div{
+    transition: color 0.5s linear;
+}
+
+.noFilled{
+    color: #C0C0C0
+}
+
+.success{
+    color: #8FD400
+}
+
+.error{
+    color: #FF355E
+}

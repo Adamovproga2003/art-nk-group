@@ -1,0 +1,100 @@
+.productPage {
+  height: 100%;
+  width: 100%;
+}
+
+.infoProduct {
+  display: flex;
+}
+
+.infoProduct > div {
+  width: 50%;
+}
+
+.infoProduct img {
+  /* height: 100%; */
+  /* max-height: 320px; */
+  width: 70%;
+  margin: auto;
+}
+
+.priceProduct {
+  display: flex;
+  align-items: center;
+  border: 1px solid #1d1d1d;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.priceProduct > div {
+  margin: 0 10px;
+}
+
+.imageProduct {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  margin: auto;
+}
+
+.modalPrice {
+  position: absolute;
+  left: 0;
+  width: calc(100vw - 500px);
+  /* height: 550px; */
+  margin: 50px 250px;
+  background-color: #f5f5f5;
+  visibility: hidden;
+  transition: all 0.3s linear;
+  opacity: 0;
+  top: -200px;
+  border-radius: 8px;
+  padding: 40px;
+}
+
+@keyframes slidein-low {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.show {
+  animation: slidein-low 0.3s ease 0s 1 normal none;
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapperContainer {
+  display: flex;
+}
+
+.wrapperContainer > div {
+  width: 100%;
+}
+
+.wrapperContainer div:first-child {
+  margin-right: 10px;
+}
+
+.wrapperContainer div:last-child {
+  margin-left: 10px;
+}
+
+.modalPrice form{
+  padding: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin: 20px;
+  border-radius: 8px;
+}

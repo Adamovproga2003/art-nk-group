@@ -1,0 +1,25 @@
+.formElement{
+    display: flex;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.signInForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signInForm > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.signInForm div > div{
+    width: 100%
+}
