@@ -1,0 +1,31 @@
+.top-to-btm {
+  position: relative;
+}
+.iconPosition {
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+  z-index: 20;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+.iconStyle {
+  background: #fff;
+  color: #551b54;
+  border: 2px solid #551b54;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.iconStyle:hover {
+  box-shadow: 0px 5px 10px 2px rgba(20, 99, 159, 0.2);
+  transform: scale(0.97);
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
