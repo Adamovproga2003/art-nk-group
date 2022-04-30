@@ -1,5 +1,7 @@
 .main{
     display: flex;
+    background-color: #F4F4F4;
+    padding-top: 100px;
 }
 
 /* .main div:first-child{
