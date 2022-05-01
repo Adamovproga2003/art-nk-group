@@ -1,8 +1,3 @@
-.productsComponent {
-  width: 100%;
-  background-color: #d4e1ea;
-  border-radius: 10px;
-}
 .wrapperProductsComponent {
   display: flex;
   flex-wrap: wrap;

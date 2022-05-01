@@ -1,55 +1,38 @@
-import React, { useEffect, useState } from 'react'
-import { connect } from 'react-redux'
-import { clearProduct } from './../../../../../actions/app-actions'
-import ProductCard from '../../../../containers/ProductCard/ProductCard'
-import styles from './ProductsComponent.module.css'
-import { Breadcrumbs } from '@mui/material'
-import SortedCards from '../../../../containers/SortedCards/SortedCards'
+import React, { useEffect, useRef } from "react";
+import styles from "./ProductsComponent.module.css";
+import { useOnLoadImages } from "../../../../../hooks/useOnLoadImages";
+import Loader from "../../../Loader/Loader";
+import ProductsContent from "./ProductsContent/ProductsContent";
+import { connect } from "react-redux";
 
-const ProductsComponent = ({ sortedCategories, products, currentProduct, clearProduct }) => {
+const ProductsComponent = ({
+  isLoading,
+  currentSection,
+  setCurrentSection,
+  countOfViewedProducts,
+  sortedCategory
+}) => {
+  const wrapperRef = useRef(null);
+  const imagesLoaded = useOnLoadImages(wrapperRef);
 
-    const [cards, setCards] = useState(products)
 
-    useEffect(() => {
-        setCards(products)
-    }, [products])
 
-    useEffect(() => {
-        currentProduct && clearProduct()
-    }, [clearProduct, currentProduct])
+  return (
+    <div className={styles.productsComponent} ref={wrapperRef}>
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <ProductsContent
+          imagesLoaded={imagesLoaded}
+          currentSection={currentSection}
+          setCurrentSection={setCurrentSection}
+          countOfViewedProducts={countOfViewedProducts}
+        />
+      )}
+    </div>
+  );
+};
 
-    return (
-        <div className={styles.productsComponent}>
-            <div>
-                <Breadcrumbs separator="›" aria-label="breadcrumb">
-                    {sortedCategories.map((category, index) => {
-                        return <span key={index}>{category}</span>
-                    })}
-                </Breadcrumbs>
-            </div>
-            <div className={styles.wrapperProductsComponent}>
-                {cards && cards.length > 0 &&
-                    sortedCategories.length === 0
-                    ?
-                    cards.map(card => <ProductCard card={card} key={card.id} />)
-                    :
-                    <SortedCards sortedCategories={sortedCategories} cards={cards} />
-                }
-                {/* {cards && cards.length > 0 && sortedCategories.length !== 0 && cards.map(card => {
-                    if (sortedCategories.includes(card.category)) {
-                        return <ProductCard card={card} key={card.id} />
-                    }
-                    return <></>
-                })} */}
-            </div>
-        </div>
-    )
-}
-
-export default connect(
-    state => ({
-        products: state.app.products,
-        currentProduct: state.app.currentProduct
-    }),
-    { clearProduct }
-)(ProductsComponent)
+export default connect((state) => ({
+  isLoading: state.api.isLoading,
+}))(ProductsComponent);

@@ -10,6 +10,8 @@
     margin: 20px;
     transition: all 0.1s linear;
     border-radius: 5px;
+    background-color: #88AFCC;
+    color: #fff;
 }
 
 .productCard:hover{
@@ -40,7 +42,6 @@
 
 .productTitle a{
     text-decoration: none;
-    color: #1d1d1d;
 }
 
 .productTitle a:hover{

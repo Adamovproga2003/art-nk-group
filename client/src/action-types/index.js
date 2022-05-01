@@ -29,6 +29,8 @@ export const FAIL_GET_CATEGORY = "fail_get_category";
 export const FAIL_GET_PRODUCTS = "fail_get_products";
 export const GET_PRODUCTS = "get_products";
 export const FAIL_GET_PRODUCT = "fail_get_product";
+export const GET_PRODUCTS_OF_CATEGORY = "get_products_of_category";
+export const FAIL_GET_PRODUCTS_OF_CATEGORY = "fail_get_products_of_category";
 
 export const SUCCESS_VALIDATE_ADDRESS = "success_validate_address";
 export const CLEAR_VALIDATE = "clear_validate";

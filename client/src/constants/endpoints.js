@@ -19,7 +19,8 @@ export const TEST_ENDPOINTS = {
 export const PRODUCT_ENDPOINTS = {
   GET_PRODUCT: `${BASE_URLS.PRODUCTS}/get-product/`,
   GET_CATEGORIES: `${BASE_URLS.PRODUCTS}/get-categories`,
-  GET_PRODUCTS: `${BASE_URLS.PRODUCTS}/get-products`
+  GET_PRODUCTS: `${BASE_URLS.PRODUCTS}/get-products`,
+  GET_PRODUCTS_OF_CATEGORY: `${BASE_URLS.PRODUCTS}/get-products-of-category`
 }
 
 export const SHIPPING_ENDPOINTS = {
